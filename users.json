@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Demo Admin",
+    "email": "admin@stackshift.com",
+    "password": "password123"
+  },
+  {
+    "name": "test",
+    "email": "bhavyarathore5551@gmail.com",
+    "password": "123456789"
+  },
+  {
+    "name": "testing",
+    "email": "bhavya555arathore@gmail.com",
+    "password": "123456789"
+  }
+]

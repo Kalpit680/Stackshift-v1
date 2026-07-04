@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Enable class-based dark mode in Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
 
-@theme inline {
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card-bg: var(--card-bg);
+  --color-surface-muted: var(--surface-muted);
+  --color-border-color: var(--border-color);
+  --color-border-muted: var(--border-color-muted);
+  --color-bg-hover: var(--bg-hover);
+  --color-muted-text: var(--muted-text);
+  
+  --color-primary-purple: #7C3AED;
+  --color-hover-purple: #6D28D9;
+  --color-soft-purple-border: #C4B5FD;
+  --color-soft-purple-bg: #F5F3FF;
+  
+  /* Dynamic Tech Badge Colors */
+  --color-tech-php-bg: var(--tech-php-bg);
+  --color-tech-php-text: var(--tech-php-text);
+  --color-tech-js-bg: var(--tech-js-bg);
+  --color-tech-js-text: var(--tech-js-text);
+  --color-tech-ng-bg: var(--tech-ng-bg);
+  --color-tech-ng-text: var(--tech-ng-text);
+  --color-tech-net-bg: var(--tech-net-bg);
+  --color-tech-net-text: var(--tech-net-text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #F8FAFC;
+  --foreground: #111827;
+  --card-bg: #FFFFFF;
+  --surface-muted: #F1F5F9;
+  --border-color: #C4B5FD;
+  --border-color-muted: rgba(196, 181, 253, 0.4);
+  --bg-hover: #F5F3FF;
+  --muted-text: #6B7280;
+
+  /* Tech colors for Light mode */
+  --tech-php-bg: rgba(16, 185, 129, 0.08);
+  --tech-php-text: #047857;
+  --tech-js-bg: rgba(99, 102, 241, 0.08);
+  --tech-js-text: #4338ca;
+  --tech-ng-bg: rgba(168, 85, 247, 0.08);
+  --tech-ng-text: #7e22ce;
+  --tech-net-bg: rgba(59, 130, 246, 0.08);
+  --tech-net-text: #1d4ed8;
+}
+
+html.dark {
+  --background: #0A0A0B;
+  --foreground: #F8FAFC;
+  --card-bg: #111214;
+  --surface-muted: rgba(255, 255, 255, 0.04); /* premium dark grey surface for tabs/pills */
+  --border-color: rgba(196, 181, 253, 0.16);
+  --border-color-muted: rgba(196, 181, 253, 0.08);
+  --bg-hover: rgba(255, 255, 255, 0.06);
+  --muted-text: #9CA3AF;
+
+  /* Tech colors for Dark mode */
+  --tech-php-bg: rgba(52, 211, 153, 0.12);
+  --tech-php-text: #34d399;
+  --tech-js-bg: rgba(129, 140, 248, 0.12);
+  --tech-js-text: #818cf8;
+  --tech-ng-bg: rgba(192, 132, 252, 0.12);
+  --tech-ng-text: #c084fc;
+  --tech-net-bg: rgba(96, 165, 250, 0.12);
+  --tech-net-text: #60a5fa;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Custom cards styling to ensure premium feel */
+.enterprise-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+}
+
+.enterprise-input {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--foreground);
+}
+
+.enterprise-input:focus {
+  border-color: #7C3AED;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
 }
