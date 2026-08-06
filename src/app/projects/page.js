@@ -75,6 +75,11 @@ export default function ProjectsPage() {
 
   // Download report handler (creates a real client-side text file download)
   const handleDownloadReport = (project) => {
+    if (!project) return;
+    const languagesText = project.languages && Object.keys(project.languages).length > 0 
+      ? Object.entries(project.languages).map(([lang, count]) => `  - ${lang}: ${count} file(s)`).join('\n')
+      : '  - None';
+
     const reportText = `==================================================
 STACK SHIFT - MIGRATION ANALYSIS REPORT
 ==================================================
@@ -84,6 +89,9 @@ Target System Stack: ${project.technology}
 Source Version: ${project.current_version}
 Target Version: ${project.target_version}
 Migration Status: ${project.status}
+Total Codebase Files: ${project.total_files || 0}
+Codebase Languages:
+${languagesText}
 Created By: ${project.user_name}
 --------------------------------------------------
 COMPATIBILITY METRICS:
@@ -92,8 +100,11 @@ Migration Complexity: ${project.complexity}
 Estimated Upgrade Risk: ${project.risk}
 Detected Potential Breaking Changes: ${project.breaking_changes}
 --------------------------------------------------
-MIGRATION LOGS & WALKTHROUGH PATH:
-${project.logs ? project.logs.map((log, index) => `${index + 1}. [OK] ${log}`).join('\n') : 'No logs recorded.'}
+ANALYSIS ESSENCE & COMPATIBILITY INSIGHTS:
+- Technology Stack identified as ${project.technology}.
+- Code health evaluation resolved to a compatibility index of ${project.score}%.
+- Identified ${project.breaking_changes} potential breaking change(s) requiring remediation.
+- Overall migration complexity classified as ${project.complexity} with a ${project.risk} risk profile.
 --------------------------------------------------
 RECOMMENDED UPGRADE PATHWAY:
 1. Configure dependencies explicitly for ${project.target_version}.
@@ -124,7 +135,7 @@ RECOMMENDED UPGRADE PATHWAY:
     // Status mappings
     const currentStatus = project.status?.toLowerCase();
     
-    if (activeFilter === 'Completed') return matchesSearch && currentStatus === 'completed';
+    if (activeFilter === 'Completed') return matchesSearch && (currentStatus === 'completed' || currentStatus === 'migrated');
     if (activeFilter === 'Scanning') return matchesSearch && currentStatus === 'scanning';
     if (activeFilter === 'Pending') return matchesSearch && currentStatus === 'pending';
     if (activeFilter === 'Failed') return matchesSearch && currentStatus === 'failed';
@@ -139,7 +150,7 @@ RECOMMENDED UPGRADE PATHWAY:
 
   const getStatusStyle = (statusName) => {
     const norm = statusName?.toLowerCase();
-    if (norm === 'completed') {
+    if (norm === 'completed' || norm === 'migrated') {
       return 'bg-emerald-100 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-400 border-emerald-200/50 dark:border-emerald-900/30';
     }
     if (norm === 'failed') {
@@ -281,9 +292,16 @@ RECOMMENDED UPGRADE PATHWAY:
                         {project.target_version}
                       </td>
                       <td className="px-6 py-4.5">
-                        <span className={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold border ${getStatusStyle(project.status)}`}>
-                          {project.status === 'Scanning' ? 'Scanning...' : project.status}
-                        </span>
+                        <div className="flex flex-col">
+                          <span className={`inline-flex items-center w-max px-3 py-1.5 rounded-full text-xs font-bold border ${getStatusStyle(project.status)}`}>
+                            {project.status === 'Scanning' ? 'Scanning...' : project.status}
+                          </span>
+                          {project.status !== 'Completed' && project.status !== 'Failed' && project.status !== 'Migrated' && (
+                            <span className="text-[10px] font-semibold text-primary-purple mt-1">
+                              Remaining: {project.formatted_remaining_time || '0s'} left
+                            </span>
+                          )}
+                        </div>
                       </td>
                       <td className="px-6 py-4.5 text-xs font-semibold text-muted-text">
                         {formatDate(project.created_at)}
@@ -301,7 +319,7 @@ RECOMMENDED UPGRADE PATHWAY:
                           <button
                             onClick={() => handleDownloadReport(project)}
                             title="Download Migration Report"
-                            disabled={project.status !== 'Completed' && project.status !== 'Failed'}
+                            disabled={project.status !== 'Completed' && project.status !== 'Failed' && project.status !== 'Migrated'}
                             className="p-2 hover:bg-primary-purple/10 hover:text-primary-purple disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-muted-text rounded-lg text-muted-text transition-colors duration-150 cursor-pointer"
                           >
                             <Download className="h-4.5 w-4.5" />

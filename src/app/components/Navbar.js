@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
 import { useTheme } from '@/app/providers';
-import { Sun, Moon, LogOut, ChevronDown, User, Layers, History, BookOpen } from 'lucide-react';
+import { Sun, Moon, LogOut, ChevronDown, User, Layers, History, BookOpen, UserX } from 'lucide-react';
+import axios from 'axios';
 
 export default function Navbar() {
   const { data: session } = useSession();
@@ -26,6 +27,20 @@ export default function Navbar() {
   }, []);
 
   const user = session?.user;
+
+  const handleDeleteAccount = async () => {
+    if (confirm("Are you sure you want to permanently delete your account? This action cannot be undone and will delete all your migration projects.")) {
+      if (confirm("Double check: Do you want to proceed with permanent deletion?")) {
+        try {
+          await axios.post('/api/auth/delete-account');
+          signOut({ callbackUrl: '/login' });
+        } catch (err) {
+          console.error(err);
+          alert('Failed to delete account. Please try again.');
+        }
+      }
+    }
+  };
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border-color bg-card-bg/85 backdrop-blur-md transition-colors duration-300">
@@ -123,9 +138,19 @@ export default function Navbar() {
                   <button
                     onClick={() => {
                       setDropdownOpen(false);
+                      handleDeleteAccount();
+                    }}
+                    className="flex items-center space-x-2 w-full px-3 py-2 text-sm text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20 rounded-xl transition-all duration-150 text-left cursor-pointer"
+                  >
+                    <UserX className="h-4 w-4" />
+                    <span>Delete Account</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setDropdownOpen(false);
                       signOut({ callbackUrl: '/login' });
                     }}
-                    className="flex items-center space-x-2 w-full px-3 py-2 text-sm text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 rounded-xl transition-all duration-150 text-left"
+                    className="flex items-center space-x-2 w-full px-3 py-2 text-sm text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/20 rounded-xl transition-all duration-150 text-left cursor-pointer"
                   >
                     <LogOut className="h-4 w-4" />
                     <span>Sign Out</span>

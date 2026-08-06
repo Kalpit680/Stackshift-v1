@@ -1,0 +1,35 @@
+[
+  {
+    "id": "PHP5_DEP_MYSQL_CONNECT",
+    "name": "Replace mysql_connect with mysqli_connect",
+    "type": "function_replace",
+    "pattern": "/\\bmysql_connect\\s*\\(/i",
+    "replacement": "mysqli_connect(",
+    "description": "The mysql extension is deprecated in PHP 5.5 and removed in PHP 7.0. Use mysqli or PDO instead.",
+    "oldCodeExample": "mysql_connect($host, $user, $pass)",
+    "newCodeExample": "mysqli_connect($host, $user, $pass)",
+    "confidence": "High"
+  },
+  {
+    "id": "PHP7_DEP_EACH",
+    "name": "Replace each() with foreach loop wrapper",
+    "type": "each_replace",
+    "pattern": "/while\\s*\\(\\s*list\\s*\\(\\s*(\\$[^,]+)\\s*,\\s*(\\$[^)]+)\\s*\\)\\s*=\\s*each\\s*\\(\\s*(\\$[^)]+)\\s*\\)\\s*\\)/i",
+    "replacement": "foreach ($3 as $1 => $2)",
+    "description": "The each() function is deprecated in PHP 7.2 and removed in PHP 8.0.",
+    "oldCodeExample": "while (list($key, $val) = each($arr))",
+    "newCodeExample": "foreach ($arr as $key => $val)",
+    "confidence": "Medium"
+  },
+  {
+    "id": "PHP7_DEP_SPLIT",
+    "name": "Replace split() with explode() or preg_split()",
+    "type": "function_replace",
+    "pattern": "/\\bsplit\\s*\\(/i",
+    "replacement": "explode(",
+    "description": "The split() function is deprecated in PHP 5.3 and removed in PHP 7.0. Use explode() for simple splitting or preg_split() for regex.",
+    "oldCodeExample": "split(',', $string)",
+    "newCodeExample": "explode(',', $string)",
+    "confidence": "High"
+  }
+]

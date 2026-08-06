@@ -16,6 +16,16 @@ export default function RootPage() {
     }
   }, [status, router]);
 
+  // Fallback redirect if session status takes too long to respond
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (status === 'loading') {
+        router.replace('/login');
+      }
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [status, router]);
+
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-background text-foreground transition-colors duration-300">
       <div className="flex flex-col items-center space-y-4">

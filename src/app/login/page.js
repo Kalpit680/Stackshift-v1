@@ -23,6 +23,18 @@ export default function LoginPage() {
   const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // Check error query parameter for unregistered Google users
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const err = params.get('error');
+      if (err === 'unregistered_google') {
+        setError('no user found as this username is not registered.');
+        setLoading(false);
+      }
+    }
+  }, []);
+
   // Form inputs
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

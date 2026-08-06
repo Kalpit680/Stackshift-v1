@@ -1,0 +1,11 @@
+{
+  "upgraded_zip_url": "http://localhost:3000/uploads/upgraded-RESUME_MATCHER_GEMINI-php.zip",
+  "diffs": [],
+  "tech_upgrades": {
+    "JavaScript": {
+      "before": "ES5 / Legacy JS",
+      "after": "ES6+ Modern JS"
+    }
+  },
+  "upgraded_files_count": 0
+}

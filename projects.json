@@ -1,37 +1,2059 @@
 [
   {
-    "project_name": "testing php project",
-    "user_name": "Bhavya Rathore",
-    "zip_url": "http://localhost:3000/uploads/php_project_testing.zip"
+    "project_name": "test1",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785920294851,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
   },
   {
-    "project_name": "school erp system11",
+    "project_name": "test",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785919185006,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps991",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785914358094,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps990",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785913375798,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps99",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785909480136,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps90",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785908152423,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps020",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785753480858,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps010",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785751968120,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps101",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785750117438,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps009",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785749260358,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps008",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785747697031,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps007",
+    "user_name": "Kalpit Sharma",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785743998978,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps006",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785743096365,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps005",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785741771734,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps004",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785740733957,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps001",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1785736284161,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 8.3",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy005",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1785736214839,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 8.3",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy004",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1785736088315,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy003",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1785735882021,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy002",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1785735497244,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy001",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1785733999695,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps11",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "cps",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/cps-Jaipur-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.2",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 34,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 71050,
+    "total_files": 25889,
+    "languages": {
+      "JavaScript": 2060,
+      "Other": 9581,
+      "CSS": 689,
+      "HTML": 524,
+      "PHP": 12938,
+      "JSON": 7,
+      "TypeScript": 90
+    },
+    "migration_candidates": [
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/jquery/jquery.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/adapter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/adapter/prototype/prototype.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/DOMUtils.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Element.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Event.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/ScriptLoader.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Selection.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/Serializer.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/StringWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      },
+      {
+        "path": "cps-Jaipur/Editor/classes/dom/XMLWriter.js",
+        "reason": "Contains legacy JS patterns",
+        "category": "JavaScript compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy6",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy5",
+    "user_name": "kalpit1",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy3",
+    "user_name": "kalpit",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy2",
+    "user_name": "kalpit",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "legacy",
+    "user_name": "kalpit",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "vs",
+    "user_name": "kalpit",
+    "zip_url": "http://localhost:3000/uploads/legacy_php_blog-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.6",
+    "target_version": "PHP 7.4 (Recommended)",
+    "score": 52,
+    "complexity": "High",
+    "risk": "High",
+    "breaking_changes": 6,
+    "total_files": 6,
+    "languages": {
+      "PHP": 4,
+      "Other": 2
+    },
+    "migration_candidates": [
+      {
+        "path": "index.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "config.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "add.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      },
+      {
+        "path": "delete.php",
+        "reason": "Contains deprecated PHP syntax that should be modernized",
+        "category": "PHP compatibility"
+      }
+    ]
+  },
+  {
+    "project_name": "Resume_Parser",
+    "user_name": "Bella",
+    "zip_url": "http://localhost:3000/uploads/RESUME_MATCHER_GEMINI-php.zip",
+    "created_at": 1754200000000,
+    "technology": "unknown",
+    "current_version": "unknown",
+    "target_version": "unknown",
+    "score": 100,
+    "complexity": "Low",
+    "risk": "Low",
+    "breaking_changes": 0,
+    "total_files": 4,
+    "languages": {
+      "JSON": 1,
+      "HTML": 1,
+      "JavaScript": 1,
+      "CSS": 1
+    },
+    "migration_candidates": []
+  },
+  {
+    "project_name": "testing",
     "user_name": "Bhavya Rathore",
-    "zip_url": "http://localhost:3000/uploads/shiftstack (2).zip"
+    "zip_url": "http://localhost:3000/uploads/php_project_testing-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.4",
+    "target_version": "PHP 8.3 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
+  },
+  {
+    "project_name": "testing 2",
+    "user_name": "Bhavya Rathore",
+    "zip_url": "http://localhost:3000/uploads/php_project_testing-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.4",
+    "target_version": "PHP 8.3 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
   },
   {
     "project_name": "school erp system",
     "user_name": "Bhavya Rathore",
-    "zip_url": "http://localhost:3000/uploads/files.zip"
-  },
-  {
-    "project_name": "testing",
-    "user_name": "testing",
-    "zip_url": "http://localhost:3000/uploads/ui ux skill.zip"
+    "zip_url": "http://localhost:3000/uploads/php_project_testing-php.zip",
+    "created_at": 1754200000000,
+    "technology": "PHP",
+    "current_version": "PHP 5.4",
+    "target_version": "PHP 8.3 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
   },
   {
     "project_name": "CRM Upgrade",
     "user_name": "Demo Admin",
-    "zip_url": "http://localhost:3000/uploads/crm-v5.zip"
+    "zip_url": "http://localhost:3000/uploads/crm-v5.zip",
+    "created_at": 1754200000000,
+    "technology": "Angular",
+    "current_version": "Angular 12",
+    "target_version": "Angular 18 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
   },
   {
     "project_name": "Billing System",
     "user_name": "Demo Admin",
-    "zip_url": "http://localhost:3000/uploads/billing-node.zip"
+    "zip_url": "http://localhost:3000/uploads/billing-node.zip",
+    "created_at": 1754200000000,
+    "technology": "Node.js",
+    "current_version": "Node 12",
+    "target_version": "Node 20 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
   },
   {
     "project_name": "Legacy Portal",
     "user_name": "Demo Admin",
-    "zip_url": "http://localhost:3000/uploads/legacy-portal.zip"
+    "zip_url": "http://localhost:3000/uploads/legacy-portal.zip",
+    "created_at": 1754200000000,
+    "technology": "Node.js",
+    "current_version": "Node 14",
+    "target_version": "Node 20 (Recommended)",
+    "languages": {},
+    "migration_candidates": []
   }
 ]

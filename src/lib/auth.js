@@ -40,6 +40,19 @@ export const authOptions = {
     signIn: "/login",
   },
   callbacks: {
+    async signIn({ user, account, profile }) {
+      if (account.provider === "google") {
+        const users = readUsersDB();
+        const email = user.email || profile?.email;
+        const exists = users.some(
+          (u) => u.email?.toLowerCase() === email?.toLowerCase()
+        );
+        if (!exists) {
+          return "/login?error=unregistered_google";
+        }
+      }
+      return true;
+    },
     async session({ session, token }) {
       if (token) {
         session.user.id = token.id || token.sub;
