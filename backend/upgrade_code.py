@@ -15,78 +15,116 @@ import tree_sitter_php
 # Official PHP mysql_* functions and their metadata
 DEPRECATED_FUNCTIONS = {
 
-    'mysql_affected_rows': {'replacement': 'mysqli_affected_rows', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_client_encoding': {'replacement': 'mysqli_character_set_name', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_close': {'replacement': 'mysqli_close', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_connect': {'replacement': 'mysqli_connect', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_create_db': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_data_seek': {'replacement': 'mysqli_data_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_db_name': {'replacement': 'mysqli_fetch_object', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_db_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_drop_db': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_errno': {'replacement': 'mysqli_errno', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_error': {'replacement': 'mysqli_error', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_escape_string': {'replacement': 'mysqli_real_escape_string', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_array': {'replacement': 'mysqli_fetch_array', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_assoc': {'replacement': 'mysqli_fetch_assoc', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_field': {'replacement': 'mysqli_fetch_field', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_lengths': {'replacement': 'mysqli_fetch_lengths', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_object': {'replacement': 'mysqli_fetch_object', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_fetch_row': {'replacement': 'mysqli_fetch_row', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_flags': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_len': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_name': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_seek': {'replacement': 'mysqli_field_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_table': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_field_type': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_free_result': {'replacement': 'mysqli_free_result', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_get_client_info': {'replacement': 'mysqli_get_client_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_get_host_info': {'replacement': 'mysqli_get_host_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_get_proto_info': {'replacement': 'mysqli_get_proto_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_get_server_info': {'replacement': 'mysqli_get_server_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_info': {'replacement': 'mysqli_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_insert_id': {'replacement': 'mysqli_insert_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_list_dbs': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_list_fields': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_list_processes': {'replacement': 'mysqli_thread_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_list_tables': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': True},
-    'mysql_num_fields': {'replacement': 'mysqli_num_fields', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_num_rows': {'replacement': 'mysqli_num_rows', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_pconnect': {'replacement': 'mysqli_connect', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_ping': {'replacement': 'mysqli_ping', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_real_escape_string': {'replacement': 'mysqli_real_escape_string', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_result': {'replacement': 'mysqli_data_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': True},
-    'mysql_select_db': {'replacement': 'mysqli_select_db', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_set_charset': {'replacement': 'mysqli_set_charset', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_stat': {'replacement': 'mysqli_stat', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_tablename': {'replacement': 'mysqli_fetch_array', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_thread_id': {'replacement': 'mysqli_thread_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mysql_unbuffered_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
+    'mysql_affected_rows': {'replacement': 'mysqli_affected_rows', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_client_encoding': {'replacement': 'mysqli_character_set_name', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_close': {'replacement': 'mysqli_close', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_connect': {'replacement': 'mysqli_connect', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_create_db': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_data_seek': {'replacement': 'mysqli_data_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_db_name': {'replacement': 'mysqli_fetch_object', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_db_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_drop_db': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_errno': {'replacement': 'mysqli_errno', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_error': {'replacement': 'mysqli_error', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_escape_string': {'replacement': 'mysqli_real_escape_string', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_array': {'replacement': 'mysqli_fetch_array', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_assoc': {'replacement': 'mysqli_fetch_assoc', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_field': {'replacement': 'mysqli_fetch_field', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_lengths': {'replacement': 'mysqli_fetch_lengths', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_object': {'replacement': 'mysqli_fetch_object', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_fetch_row': {'replacement': 'mysqli_fetch_row', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_flags': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_len': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_name': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_seek': {'replacement': 'mysqli_field_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_table': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_field_type': {'replacement': 'mysqli_fetch_field_direct', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_free_result': {'replacement': 'mysqli_free_result', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_get_client_info': {'replacement': 'mysqli_get_client_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_get_host_info': {'replacement': 'mysqli_get_host_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_get_proto_info': {'replacement': 'mysqli_get_proto_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_get_server_info': {'replacement': 'mysqli_get_server_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_info': {'replacement': 'mysqli_info', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_insert_id': {'replacement': 'mysqli_insert_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_list_dbs': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_list_fields': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_list_processes': {'replacement': 'mysqli_thread_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_list_tables': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': True, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_num_fields': {'replacement': 'mysqli_num_fields', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_num_rows': {'replacement': 'mysqli_num_rows', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_pconnect': {'replacement': 'mysqli_connect', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_ping': {'replacement': 'mysqli_ping', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_real_escape_string': {'replacement': 'mysqli_real_escape_string', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_result': {'replacement': 'mysqli_data_seek', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': True, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_select_db': {'replacement': 'mysqli_select_db', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_set_charset': {'replacement': 'mysqli_set_charset', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_stat': {'replacement': 'mysqli_stat', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_tablename': {'replacement': 'mysqli_fetch_array', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_thread_id': {'replacement': 'mysqli_thread_id', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'mysql_unbuffered_query': {'replacement': 'mysqli_query', 'requires_connection': True, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
     
     # Other legacy functions
-    'split': {'replacement': 'explode', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'spliti': {'replacement': 'explode', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'ereg': {'replacement': 'preg_match', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'eregi': {'replacement': 'preg_match', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'ereg_replace': {'replacement': 'preg_replace', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'session_register': {'replacement': 'session_register_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'session_unregister': {'replacement': 'session_unregister_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'session_is_registered': {'replacement': 'session_is_registered_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'call_user_method': {'replacement': 'call_user_func', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'set_magic_quotes_runtime': {'replacement': 'set_magic_quotes_runtime_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'magic_quotes': {'replacement': 'magic_quotes_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'create_function': {'replacement': 'function_exists', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'each': {'replacement': 'each_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mcrypt_encrypt': {'replacement': 'openssl_encrypt', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mcrypt_decrypt': {'replacement': 'openssl_decrypt', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mcrypt_module_open': {'replacement': 'mcrypt_module_open_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mcrypt_get_block_size': {'replacement': 'openssl_cipher_iv_length', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mcrypt_create_iv': {'replacement': 'random_bytes', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'png2wbmp': {'replacement': 'imagebmp', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'jpeg2wbmp': {'replacement': 'imagebmp', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
-    'mhash': {'replacement': 'hash', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False},
+    'split': {'replacement': 'explode', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'spliti': {'replacement': 'explode', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'ereg': {'replacement': 'preg_match', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'eregi': {'replacement': 'preg_match', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'ereg_replace': {'replacement': 'preg_replace', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'session_register': {'replacement': 'session_register_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.3', 'target_version_min': '5.4'},
+    'session_unregister': {'replacement': 'session_unregister_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.3', 'target_version_min': '5.4'},
+    'session_is_registered': {'replacement': 'session_is_registered_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.3', 'target_version_min': '5.4'},
+    'call_user_method': {'replacement': 'call_user_func', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.6', 'target_version_min': '7.0'},
+    'set_magic_quotes_runtime': {'replacement': 'set_magic_quotes_runtime_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.3', 'target_version_min': '5.4'},
+    'magic_quotes': {'replacement': 'magic_quotes_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '5.3', 'target_version_min': '5.4'},
+    'create_function': {'replacement': 'function_exists', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.4', 'target_version_min': '8.0'},
+    'each': {'replacement': 'each_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.4', 'target_version_min': '8.0'},
+    'mcrypt_encrypt': {'replacement': 'openssl_encrypt', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.1', 'target_version_min': '7.2'},
+    'mcrypt_decrypt': {'replacement': 'openssl_decrypt', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.1', 'target_version_min': '7.2'},
+    'mcrypt_module_open': {'replacement': 'mcrypt_module_open_DEPRECATED', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.1', 'target_version_min': '7.2'},
+    'mcrypt_get_block_size': {'replacement': 'openssl_cipher_iv_length', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.1', 'target_version_min': '7.2'},
+    'mcrypt_create_iv': {'replacement': 'random_bytes', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.1', 'target_version_min': '7.2'},
+    'png2wbmp': {'replacement': 'imagebmp', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.4', 'target_version_min': '8.0'},
+    'jpeg2wbmp': {'replacement': 'imagebmp', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.4', 'target_version_min': '8.0'},
+    'mhash': {'replacement': 'hash', 'requires_connection': False, 'validation_rule': 'Check connection injection', 'confidence_score': 100, 'semantic_rewrite': False, 'source_version_max': '7.4', 'target_version_min': '8.0'},
 }
+
+def version_le(v1, v2):
+    try:
+        p1 = tuple(map(int, v1.split('.')))
+        p2 = tuple(map(int, v2.split('.')))
+        return p1 <= p2
+    except Exception:
+        return True
+
+def version_ge(v1, v2):
+    try:
+        p1 = tuple(map(int, v1.split('.')))
+        p2 = tuple(map(int, v2.split('.')))
+        return p1 >= p2
+    except Exception:
+        return True
+
+def detect_source_version(zip_file):
+    namelist = zip_file.namelist()
+    composer_path = [f for f in namelist if f.endswith('composer.json')]
+    if composer_path:
+        try:
+            composer_data = json.loads(zip_file.read(composer_path[0]).decode('utf-8', errors='ignore'))
+            php_req = composer_data.get('require', {}).get('php', '')
+            match = re.search(r'(\d+\.\d+)', php_req)
+            if match:
+                return f"{match.group(1)}"
+        except Exception:
+            pass
+    php_files = [f for f in namelist if f.endswith('.php')][:10]
+    for pf in php_files:
+        try:
+            content = zip_file.read(pf).decode('utf-8', errors='ignore')
+            if 'mysql_connect' in content:
+                return '5.6'
+        except Exception:
+            continue
+    return '5.6'
 
 # ============================================================================
 # PIPELINE COMPONENTS
@@ -164,8 +202,10 @@ class Parser:
             return None
 
 class RuleEngine:
-    def __init__(self, diagnostics):
+    def __init__(self, diagnostics, source_version="5.6", target_version="8.2"):
         self.diagnostics = diagnostics
+        self.source_version = source_version
+        self.target_version = target_version
         self.rules_matched_total = 0
         self.deprecated_apis_detected = 0
 
@@ -209,6 +249,14 @@ class RuleEngine:
                     func_name = name_node.text.decode('utf-8').lower()
                     if func_name in DEPRECATED_FUNCTIONS:
                         rule = DEPRECATED_FUNCTIONS[func_name]
+                        
+                        # Version-based filtering
+                        src_max = rule.get('source_version_max')
+                        tgt_min = rule.get('target_version_min')
+                        if src_max and not version_le(self.source_version, src_max):
+                            return
+                        if tgt_min and not version_ge(self.target_version, tgt_min):
+                            return
                         
                         args_list = []
                         for c in args_node.children:
@@ -380,7 +428,12 @@ def upgrade_codebase(zip_path, upgraded_zip_path, target_version=None, framework
         with zipfile.ZipFile(zip_path, 'r') as z_in, zipfile.ZipFile(upgraded_zip_path, 'w', zipfile.ZIP_DEFLATED) as z_out:
             scanner = Scanner(z_in)
             parser = Parser()
-            rule_engine = RuleEngine(diagnostics)
+            
+            detected_source_version = detect_source_version(z_in)
+            source_version_clean = detected_source_version.strip()
+            target_version_clean = target_version_label.replace('PHP ', '').strip()
+            
+            rule_engine = RuleEngine(diagnostics, source_version=source_version_clean, target_version=target_version_clean)
             transformer = Transformer()
             executor = Executor(z_out)
 
@@ -438,24 +491,29 @@ def upgrade_codebase(zip_path, upgraded_zip_path, target_version=None, framework
                                     func_name = name_n.text.decode('utf-8').lower()
                                     if func_name.startswith('mysqli_'):
                                         has_mysqli = True
-                                    elif func_name.startswith('mysql_'):
-                                        # Only track official deprecated functions
+                                    elif func_name.startswith('mysql_') or func_name in DEPRECATED_FUNCTIONS:
+                                        # Only track official deprecated functions matching our upgrade path
                                         if func_name in DEPRECATED_FUNCTIONS:
-                                            file_remaining[func_name] = file_remaining.get(func_name, 0) + 1
-                                            remaining_apis_global[func_name] = remaining_apis_global.get(func_name, 0) + 1
-                                            line_num = name_n.start_point[0] + 1
-                                            rule_exp = DEPRECATED_FUNCTIONS[func_name]['replacement']
-                                            reason = "Unresolved dependency / complex arguments"
-                                            if func_name in diagnostics.rules and diagnostics.rules[func_name]['reasons']:
-                                                reason = diagnostics.rules[func_name]['reasons'][-1]
-                                            remaining_apis_details.append({
-                                                'file': filename,
-                                                'line': line_num,
-                                                'api': func_name,
-                                                'rule_expected': rule_exp,
-                                                'rule_applied': 'None',
-                                                'reason': reason
-                                            })
+                                            rule = DEPRECATED_FUNCTIONS[func_name]
+                                            src_max = rule.get('source_version_max')
+                                            tgt_min = rule.get('target_version_min')
+                                            if (not src_max or version_le(source_version_clean, src_max)) and \
+                                               (not tgt_min or version_ge(target_version_clean, tgt_min)):
+                                                file_remaining[func_name] = file_remaining.get(func_name, 0) + 1
+                                                remaining_apis_global[func_name] = remaining_apis_global.get(func_name, 0) + 1
+                                                line_num = name_n.start_point[0] + 1
+                                                rule_exp = rule['replacement']
+                                                reason = "Unresolved dependency / complex arguments"
+                                                if func_name in diagnostics.rules and diagnostics.rules[func_name]['reasons']:
+                                                    reason = diagnostics.rules[func_name]['reasons'][-1]
+                                                remaining_apis_details.append({
+                                                    'file': filename,
+                                                    'line': line_num,
+                                                    'api': func_name,
+                                                    'rule_expected': rule_exp,
+                                                    'rule_applied': 'None',
+                                                    'reason': reason
+                                                })
                             for child in node.children:
                                 find_remaining(child)
                         
@@ -515,7 +573,7 @@ def upgrade_codebase(zip_path, upgraded_zip_path, target_version=None, framework
 
         tech_upgrades = {}
         if has_php:
-            tech_upgrades["PHP"] = {"before": "PHP 5.6 / 7.0", "after": target_version_label or "PHP 8.2 / 8.3 (LTS)"}
+            tech_upgrades["PHP"] = {"before": f"PHP {source_version_clean}", "after": target_version_label or "PHP 8.2 / 8.3 (LTS)"}
         if has_python:
             tech_upgrades["Python"] = {"before": "Python 2.7", "after": "Python 3.10+ (Recommended)"}
         if has_js:

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "PHP7_DEP_CREATE_FUNCTION",
+    "name": "Replace create_function with anonymous functions",
+    "type": "function_replace",
+    "pattern": "/\\bcreate_function\\s*\\(/i",
+    "replacement": "function",
+    "description": "The create_function() function is deprecated in PHP 7.2 and removed in PHP 8.0.",
+    "oldCodeExample": "create_function('$a', 'return $a * 2;')",
+    "newCodeExample": "function($a) { return $a * 2; }",
+    "confidence": "Medium"
+  },
+  {
+    "id": "PHP7_DEP_MCRYPT_ENCRYPT",
+    "name": "Replace mcrypt_encrypt with openssl_encrypt",
+    "type": "function_replace",
+    "pattern": "/\\bmcrypt_encrypt\\s*\\(/i",
+    "replacement": "openssl_encrypt(",
+    "description": "The mcrypt extension is deprecated in PHP 7.1 and removed in PHP 7.2. Use openssl instead.",
+    "oldCodeExample": "mcrypt_encrypt($cipher, $key, $data, $mode, $iv)",
+    "newCodeExample": "openssl_encrypt($data, $method, $key, $options, $iv)",
+    "confidence": "Medium"
+  },
+  {
+    "id": "PHP7_DEP_MCRYPT_DECRYPT",
+    "name": "Replace mcrypt_decrypt with openssl_decrypt",
+    "type": "function_replace",
+    "pattern": "/\\bmcrypt_decrypt\\s*\\(/i",
+    "replacement": "openssl_decrypt(",
+    "description": "The mcrypt extension is deprecated in PHP 7.1 and removed in PHP 7.2. Use openssl instead.",
+    "oldCodeExample": "mcrypt_decrypt($cipher, $key, $data, $mode, $iv)",
+    "newCodeExample": "openssl_decrypt($data, $method, $key, $options, $iv)",
+    "confidence": "Medium"
+  }
+]

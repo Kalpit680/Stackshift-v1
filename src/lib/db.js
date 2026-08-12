@@ -234,7 +234,7 @@ export function detectStack(projectName, zipUrl) {
     return {
       technology: 'PHP',
       current_version: 'PHP 5.4',
-      target_version: 'PHP 8.3 (Recommended)'
+      target_version: 'PHP 8.4 (Recommended)'
     };
   }
   if (name.includes('-nodejs')) {
@@ -270,7 +270,7 @@ export function detectStack(projectName, zipUrl) {
     return {
       technology: 'PHP',
       current_version: 'PHP 5.4',
-      target_version: 'PHP 8.3 (Recommended)'
+      target_version: 'PHP 8.4 (Recommended)'
     };
   }
   if (name.includes('node') || name.includes('npm') || name.includes('express') || name.includes('javascript') || name.includes('js')) {
@@ -304,7 +304,7 @@ export function detectStack(projectName, zipUrl) {
 
   // Default fallback (deterministically cycles based on project name length)
   const choices = [
-    { technology: 'PHP', current_version: 'PHP 5.6', target_version: 'PHP 7.4 (Recommended)' },
+    { technology: 'PHP', current_version: 'PHP 5.6', target_version: 'PHP 8.4 (Recommended)' },
     { technology: 'Node.js', current_version: 'Node 14', target_version: 'Node 20 (Recommended)' },
     { technology: 'Angular', current_version: 'Angular 12', target_version: 'Angular 18 (Recommended)' },
     { technology: '.NET', current_version: '.NET Framework 4.8', target_version: '.NET 8 (Recommended)' },

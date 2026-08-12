@@ -43,3 +43,12 @@ next-env.d.ts
 *.zip
 
 public/uploads/*.zip
+
+# python cache
+**/__pycache__/
+*.pyc
+
+# upload reports and logs
+public/uploads/diagnostic-upgrade-output-*
+public/uploads/upgraded-report-*
+public/uploads/upgrade-output-*
