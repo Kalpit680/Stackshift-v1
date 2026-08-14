@@ -1,6 +1,6 @@
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { readUsersDB } from "@/lib/db";
+import { readUsersDB, writeUsersDB } from "@/lib/db";
 
 export const authOptions = {
   providers: [
@@ -48,7 +48,14 @@ export const authOptions = {
           (u) => u.email?.toLowerCase() === email?.toLowerCase()
         );
         if (!exists) {
-          return "/login?error=unregistered_google";
+          // Register the Google user automatically if they don't exist
+          const newUser = {
+            name: user.name || profile?.name || (email ? email.split('@')[0] : "Google User"),
+            email: email ? email.toLowerCase() : "",
+            password: "oauth-user-no-password-" + Math.random().toString(36).substring(2, 10)
+          };
+          users.push(newUser);
+          writeUsersDB(users);
         }
       }
       return true;
