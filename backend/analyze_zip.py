@@ -68,7 +68,7 @@ def _analyze_zip_internal(zip_path):
             "target_version": "PHP 7.4 (Recommended)",
             "framework": "No framework",
             "framework_options": ["Laravel", "Symfony", "WordPress", "Core PHP", "No framework"],
-            "supported_versions": ["PHP 7.4", "PHP 8.0", "PHP 8.2", "PHP 8.3"],
+            "supported_versions": ["PHP 5.6", "PHP 7.0", "PHP 7.1", "PHP 7.2", "PHP 7.3", "PHP 7.4", "PHP 8.0", "PHP 8.1", "PHP 8.2", "PHP 8.3", "PHP 8.4"],
             "migration_candidates": []
         }
 
@@ -190,7 +190,7 @@ def _analyze_zip_internal(zip_path):
                     'target_version': target,
                     'framework': framework,
                     'framework_options': ['Laravel', 'Symfony', 'WordPress', 'Core PHP', 'No framework'],
-                    'supported_versions': ['PHP 7.4', 'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3'],
+                    'supported_versions': ['PHP 5.6', 'PHP 7.0', 'PHP 7.1', 'PHP 7.2', 'PHP 7.3', 'PHP 7.4', 'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3', 'PHP 8.4'],
                     'migration_candidates': migration_candidates[:12],
                     'score': score,
                     'complexity': complexity,

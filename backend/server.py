@@ -397,13 +397,50 @@ class CodeLiftRequestHandler(http.server.BaseHTTPRequestHandler):
         output_dir = os.path.join(OUTPUT_DIR, project_id, 'source')
         os.makedirs(output_dir, exist_ok=True)
 
-        # Load rules from KB
+        # Load rules from KB based on versions
+        source_version = scan.get('detectedVersion', '5.6')
+        
+        def clean_ver(v):
+            match = re.search(r'(\d+\.\d+)', str(v))
+            return match.group(1) if match else '5.6'
+            
+        src_clean = clean_ver(source_version)
+        tgt_clean = clean_ver(target_version)
+        
         rules = []
-        kb_path = os.path.join(KB_DIR, 'php', f"rules_5.6_to_7.4.json")
+        kb_path = os.path.join(KB_DIR, 'php', f"rules_{src_clean}_to_{tgt_clean}.json")
         if os.path.exists(kb_path):
             with open(kb_path, 'r') as f:
                 rules = json.load(f)
         else:
+            # Try fallback matching
+            try:
+                src_val = float(src_clean)
+                tgt_val = float(tgt_clean)
+                if src_val < 7.0:
+                    if tgt_val >= 8.0:
+                        for f_name in ["rules_5.6_to_7.4.json", "rules_7.4_to_8.2.json"]:
+                            p = os.path.join(KB_DIR, 'php', f_name)
+                            if os.path.exists(p):
+                                with open(p, 'r') as f:
+                                    rules.extend(json.load(f))
+                    else:
+                        p = os.path.join(KB_DIR, 'php', "rules_5.6_to_7.4.json")
+                        if os.path.exists(p):
+                            with open(p, 'r') as f:
+                                rules = json.load(f)
+                else:
+                    p = os.path.join(KB_DIR, 'php', "rules_7.4_to_8.2.json")
+                    if os.path.exists(p):
+                        with open(p, 'r') as f:
+                            rules = json.load(f)
+            except Exception:
+                p = os.path.join(KB_DIR, 'php', "rules_5.6_to_7.4.json")
+                if os.path.exists(p):
+                    with open(p, 'r') as f:
+                        rules = json.load(f)
+
+        if not rules:
             # Fallback default hardcoded rules in memory
             rules = [
                 {

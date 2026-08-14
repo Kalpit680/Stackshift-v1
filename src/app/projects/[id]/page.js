@@ -253,6 +253,12 @@ export default function ProjectDetailsPage() {
       ? project.migration_diffs.map((d) => `File: ${d.file}\n--------------------------------------------------\n${d.diff}\n--------------------------------------------------`).join('\n\n')
       : 'No lines required changes. The codebase is already compatible.';
 
+    const filesChangedCount = project.upgraded_files_count || (project.report_metrics?.files_migrated ?? 0);
+    const filesDeprecatedCount = project.report_metrics?.files_requiring_migration || (project.migration_candidates?.length ?? 0);
+    const filesFailedToConvert = project.remaining_apis_details && project.remaining_apis_details.length > 0
+      ? new Set(project.remaining_apis_details.map(d => d.file)).size
+      : 0;
+
     const reportText = `==================================================
 STACK SHIFT - CODEBASE UPGRADE & MIGRATION REPORT
 ==================================================
@@ -264,6 +270,13 @@ Upgrade Status: COMPLETE
 
 STACK/VERSION TRANSITION:
 ${techUpgradesText}
+
+--------------------------------------------------
+MIGRATION SUMMARY METRICS:
+--------------------------------------------------
+  - Number of Files Changed: ${filesChangedCount}
+  - Number of Files Containing Deprecations: ${filesDeprecatedCount}
+  - Number of Files Failing to Convert: ${filesFailedToConvert}
 
 --------------------------------------------------
 MIGRATION ANALYSIS AND CODE CHANGES (DIFFS):
@@ -292,6 +305,12 @@ Report generated automatically by Stack Shift.
       ? Object.entries(project.languages).map(([lang, count]) => `  - ${lang}: ${count} file(s)`).join('\n')
       : '  - None';
 
+    const filesChangedCount = project.upgraded_files_count || (project.report_metrics?.files_migrated ?? 0);
+    const filesDeprecatedCount = project.report_metrics?.files_requiring_migration || (project.migration_candidates?.length ?? 0);
+    const filesFailedToConvert = project.remaining_apis_details && project.remaining_apis_details.length > 0
+      ? new Set(project.remaining_apis_details.map(d => d.file)).size
+      : 0;
+
     const reportText = `==================================================
 STACK SHIFT - MIGRATION ANALYSIS REPORT
 ==================================================
@@ -306,19 +325,28 @@ Codebase Languages:
 ${languagesText}
 Created By: ${project.user_name}
 --------------------------------------------------
+MIGRATION SUMMARY METRICS:
+--------------------------------------------------
+  - Number of Files Changed: ${filesChangedCount}
+  - Number of Files Containing Deprecations: ${filesDeprecatedCount}
+  - Number of Files Failing to Convert: ${filesFailedToConvert}
+--------------------------------------------------
 COMPATIBILITY METRICS:
+--------------------------------------------------
 Compatibility Score: ${project.score}%
 Migration Complexity: ${project.complexity}
 Estimated Upgrade Risk: ${project.risk}
 Detected Potential Breaking Changes: ${project.breaking_changes}
 --------------------------------------------------
 ANALYSIS ESSENCE & COMPATIBILITY INSIGHTS:
+--------------------------------------------------
 - Technology Stack identified as ${project.technology}.
 - Code health evaluation resolved to a compatibility index of ${project.score}%.
 - Identified ${project.breaking_changes} potential breaking change(s) requiring remediation.
 - Overall migration complexity classified as ${project.complexity} with a ${project.risk} risk profile.
 --------------------------------------------------
 RECOMMENDED UPGRADE PATHWAY:
+--------------------------------------------------
 1. Configure dependencies explicitly for ${project.target_version}.
 2. Run standard syntax lint rules matching deprecated guidelines.
 3. Validate runtime environments against generated compatibility profiles.

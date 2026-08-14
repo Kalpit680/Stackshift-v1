@@ -15,7 +15,7 @@ const VERSIONS_MAP = {
   'PHP': [
     'PHP 5.0', 'PHP 5.2', 'PHP 5.3', 'PHP 5.4', 'PHP 5.5', 'PHP 5.6', 
     'PHP 7.0', 'PHP 7.1', 'PHP 7.2', 'PHP 7.3', 'PHP 7.4', 
-    'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3'
+    'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3', 'PHP 8.4'
   ],
   'Node.js': [
     'Node 8', 'Node 10', 'Node 12', 'Node 14', 'Node 16', 'Node 18', 'Node 20'
@@ -621,7 +621,7 @@ export default function HomePage() {
                       onChange={(e) => setSelectedTargetVersion(e.target.value)}
                       className="w-full rounded-xl border border-border-muted bg-background px-3.5 py-2.5 text-xs font-bold text-foreground focus:outline-none focus:border-primary-purple"
                     >
-                      {(uploadSummary.supported_versions || ['PHP 7.4', 'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3']).map((ver) => (
+                      {(uploadSummary.supported_versions || ['PHP 7.4', 'PHP 8.0', 'PHP 8.1', 'PHP 8.2', 'PHP 8.3', 'PHP 8.4']).map((ver) => (
                         <option key={ver} value={ver}>{ver}</option>
                       ))}
                     </select>

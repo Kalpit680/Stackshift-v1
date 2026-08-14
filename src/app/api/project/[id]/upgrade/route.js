@@ -98,7 +98,8 @@ export async function POST(req, { params }) {
           completed_with_warnings: result.completed_with_warnings || false,
           remaining_apis: result.remaining_apis || {},
           remaining_apis_details: result.remaining_apis_details || [],
-          rule_diagnostics: result.rule_diagnostics || {}
+          rule_diagnostics: result.rule_diagnostics || {},
+          report_metrics: result.report_metrics || {}
         };
 
         // We already defined sidecarPath above
