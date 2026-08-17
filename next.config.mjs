@@ -7,6 +7,9 @@ const nextConfig = {
         '**/projects.json',
         '**/users.json',
         '**/public/uploads/**',
+        '**/laravel-api/**',
+        '**/frontend/**',
+        '**/backend/uploads/**',
         '**/.git/**',
         '**/.next/**'
       ]
